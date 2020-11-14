@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/search', 'SearchController@search');
 Route::post('/import', 'ImportController@import');
+Route::post('/order', 'OrderController@create');
+Route::get('/order', 'OrderController@getOrders');
